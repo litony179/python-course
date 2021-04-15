@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/tonyli/Documents/UNI2021/COMP4060/Technology Learning/python-course/Django-web-course/myvenv/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from setuptools.command.easy_install import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
